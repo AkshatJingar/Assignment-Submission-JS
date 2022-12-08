@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 Assignment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            height: 100vh;
+            background-color: #222222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: #22A39F;
+            font-size: 3rem;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1 id="title">Javascript Day 3 Assignment</h1>
+    </div>
+
+    <script> 
+    function calculator(n1,op,n2) {
+        let N1 = parseInt(n1);
+        let N2 = parseInt(n2);
+        switch(op) {
+            case '+' :
+                alert("Addition = "+ (N1 + N2));
+                break;
+            case '-' :
+                alert("Subtraction = "+ (N1 - N2));
+                break;
+            case '*' :
+                alert("Multiplication = "+  (N1 * N2));
+                break;
+            case '/' :
+                alert("Division = "+ (N1 / n2));
+                break;
+        }
+    }
+    let num1 = prompt("Enter The First Number ");
+    let operation = prompt("Enter The Operation From + , - , * or / ");
+    let num2 = prompt("Enter The Second Number ");
+
+    calculator(num1, operation, num2);
+    
+    </script>
+</body>
+
+</html>
