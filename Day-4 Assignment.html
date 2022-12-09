@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-4 Assignment Event-Listener</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #btn {
+            width: 100px;
+            height: 100px;
+            top: 80px;
+            left: 20px;
+            background-color: #000;
+            color: #fff;
+            font-size: 20px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            position: absolute;
+            transition: all 0.5s ease;
+        }
+
+        #btn:hover {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid black;
+        }
+
+        #title {
+            color: #333;
+            width: 275px;
+            transform: all 0.5s ease;
+            padding-bottom: 20px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Day-4 Assignment</h1>
+    <button id="btn">Click</button>
+
+    <script>
+        const title = document.getElementById("title");
+        const btn = document.getElementById("btn");
+        function task() {
+            console.log("Button is Clicked");
+            btn.textContent = "Button is Clicked";
+        }
+        btn.addEventListener("click", task);
+    </script>
+</body>
+
+</html>
